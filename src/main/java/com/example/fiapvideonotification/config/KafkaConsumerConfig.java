@@ -1,4 +1,4 @@
-package com.example.fiapvideonotification;
+package com.example.fiapvideonotification.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
