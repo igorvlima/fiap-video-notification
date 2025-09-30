@@ -1,5 +1,6 @@
-package com.example.fiapvideonotification;
+package com.example.fiapvideonotification.service;
 
+import com.example.fiapvideonotification.data.VideoStatusMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;

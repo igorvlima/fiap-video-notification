@@ -1,5 +1,6 @@
-package com.example.fiapvideonotification;
+package com.example.fiapvideonotification.service;
 
+import com.example.fiapvideonotification.data.VideoStatusMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

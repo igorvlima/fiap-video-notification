@@ -1,4 +1,4 @@
-package com.example.fiapvideonotification;
+package com.example.fiapvideonotification.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
