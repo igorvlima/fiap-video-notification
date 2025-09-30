@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fiap-video-notification-config
+  namespace: fiap-x
+data:
+  SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka.kafka.svc.cluster.local:9092
+  SPRING_KAFKA_CONSUMER_GROUP_ID: video-consumer-group
+  SPRING_KAFKA_CONSUMER_AUTO_OFFSET_RESET: earliest

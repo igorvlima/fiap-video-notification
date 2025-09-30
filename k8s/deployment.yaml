@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fiap-video-notification
+  namespace: fiap-x
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fiap-video-notification
+  template:
+    metadata:
+      labels:
+        app: fiap-video-notification
+    spec:
+      containers:
+        - name: fiap-video-notification
+          image: igorvlima/fiap-video-notification:1.0.6
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: fiap-video-notification-config
+            - secretRef:
+                name: aws-credentials
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
